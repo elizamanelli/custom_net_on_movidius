@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="next_activations" out_port_id="next_activations"/>
+		<IR id="2" name="Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="next_activations1" out_port_id="next_activations1"/>
+		<IR id="4" name="Relu1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="add_result2" out_port_id="add_result2"/>
+		<IR id="5" name="MatMul2" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="add_result1" out_port_id="add_result1"/>
+		<IR id="3" name="MatMul1" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="cast_input" out_port_id="cast_input"/>
+		<IR id="0" name="float_input" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="float_input" out_port_id="float_input"/>
+		<IR id="0" name="float_input" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Relu2" out_port_id="0"/>
+		<IR id="6" name="Relu2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="add_result" out_port_id="add_result"/>
+		<IR id="1" name="MatMul" out_port_id="3"/>
+	</map>
+</mapping>

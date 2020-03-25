@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="biased_tensor_name" out_port_id="biased_tensor_name"/>
+		<IR id="5" name="dense_3" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="dense_2/Relu:0" out_port_id="dense_2/Relu:0"/>
+		<IR id="4" name="Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="dense_1/Relu:0" out_port_id="dense_1/Relu:0"/>
+		<IR id="2" name="Relu1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="biased_tensor_name2" out_port_id="biased_tensor_name2"/>
+		<IR id="1" name="dense_1" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="dense_1_input" out_port_id="dense_1_input"/>
+		<IR id="0" name="dense_1_input" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="biased_tensor_name1" out_port_id="biased_tensor_name1"/>
+		<IR id="3" name="dense_2" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="Identity5" out_port_id="0"/>
+		<IR id="6" name="Softmax" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="dense_3/Softmax:01" out_port_id="dense_3/Softmax:01"/>
+		<IR id="6" name="Softmax" out_port_id="1"/>
+	</map>
+</mapping>
